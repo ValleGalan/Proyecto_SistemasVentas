@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "detalle_producto";
+}
+<!--para decirle a la Vista que tipo de modelo espera
+, es con la directiva de RAZOR model-->
+<!--
+@model ProyectoFinal_SistemaVentas.Models.Login
+@{Layout=null;}
+--->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minisupermercado | Administrador</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+ 
+  <body>
+    <header>
+      <div class="contenedor">
+        <div id="marca">
+          <h1><span class="resaltado">Minisupermercado</span> NOMBRE</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="actual"><a href="index.html">login</a></li>
+            <li><a href="usuarios.html">Administrar Usuarios</a></li>
+            <li><a href="productos.html">Administrar Productos</a></li>
+            <li><a href="detalle_producto.html"> Producto</a></li>
+            <li><a href="control.html">Control de Ingresos y Egresos</a></li>
+            <li><a href="detalle_ventas.html">Ventas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="cabecera">
+      <div class="contenedor">
+        <h1> Detalle producto</h1>
+      </div>
+   <table style="width:100%">
+  <tr>
+    <th>IDproducto</th>
+    <th>IDcategoria</th>
+    <th>codigo</th>
+    <th>nombre</th>
+    <th>precio venta</th>
+    <th>stock</th>
+    <th>estado</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <th>queso</th>
+    <th>90</th>
+    <th>6</th>
+    <th>disponible</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <th>papa</th>
+    <th>60</th>
+    <th>2</th>  </tr>
+</table> 
+    <footer>
+      <p>Supermercado, Copyright &copy; 2021</p>
+    </footer>
+  </body>
+</html>
